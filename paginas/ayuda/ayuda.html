@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloayuda.css">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/DrKoharu.jpg"
+            alt="Logo de la página">
+        <h1 class="page-title">Fire Cherry</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="fallo.html">Sobre nosotros</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+        </ul>
+
+        <button class="cart-button">Carrito de Compras</button>
+
+        <div class="login-section">
+            <button class="login-button"><a href="login.php">Iniciar Sesión</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <article class="faq-item" onclick="toggleAnswer('answer1')">
+                <h2>¿Que metodos de pago estan disponibles?</h2>
+                <p id="answer1" class="answer">Aceptamos pagos con tarjeta de credito y PayPal.</p>
+            </article>
+
+            <article class="faq-item" onclick="toggleAnswer('answer2')">
+                <h2>¿Que tarjetas de credito puedo usar?</h2>
+                <p id="answer2" class="answer">Puedes usar tarjetas Visa, MasterCard, o American Express.</p>
+            </article>
+
+            <article class="faq-item" onclick="toggleAnswer('answer3')">
+                <h2>¿Por que mi tarjeta de credito no funciona?</h2>
+                <p id="answer3" class="answer">Por favor revisa tu tarjeta de credito directamente con tu compania si tienes este problema. El error mas comun es debido a una tarjeta vencida, limite de credito excedido, autorizacion denegada o direccion de fracturacion incorrecta.</p>
+            </article>
+
+            <article class="faq-item" onclick="toggleAnswer('answer4')">
+                <h2>¿Como puedo cambiar el metodo de pago de una orden?</h2>
+                <p id="answer4" class="answer">Despues de realizar una orden el metodo de pago no se puede cambiar. Sin embargo, puedes actualizar la informacion de pago de una orden al iniciar sesion, seleccionando una orden de tu historial y haciendo click en el botn de "Actualizar pago".</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <h3>Síguenos en redes sociales</h3>
+            <ul>
+                <li><a href="#" target="_blank"><img
+                            src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/Redes/FB.png"
+                            alt="Facebook"></a></li>
+                <li><a href="#" target="_blank"><img
+                            src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/Redes/X.png"
+                            alt="Twitter"></a></li>
+                <li><a href="#" target="_blank"><img
+                            src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/Redes/Ins.png"
+                            alt="Instagram"></a></li>
+                <li><a href="#" target="_blank"><img
+                            src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/Redes/Linkedin.png"
+                            alt="LinkedIn"></a></li>
+                <li><a href="#" target="_blank"><img
+                            src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/Redes/Reddit.png"
+                            alt="LinkedIn"></a></li>
+                <li><a href="#" target="_blank"><img
+                            src="https://statist-threaders.000webhostapp.com/proyectos/Proyecto/img/Redes/Pin.png"
+                            alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos:</p>
+            <p>Email: Correo-ejemplo@outlook.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

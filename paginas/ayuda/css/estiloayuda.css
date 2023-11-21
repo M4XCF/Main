@@ -1,0 +1,169 @@
+*{margin: 0; padding: 0;}
+
+html{background: #fff; font-size: 24px;}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #191D20; 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.logo {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 10px; 
+}
+
+.page-title {
+    font-size: 55px; 
+    font-family: 'Javanese Text';
+    font-weight: normal;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    margin-left: 50px;
+}
+
+.menu li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 10px 15px 10px 15px;
+    background-color: #323232;
+    font-family: 'Gadugi';
+    border-radius: 10px;
+}
+
+.menu a:hover{
+    color: #A91722;
+    background: #6e6e6e;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #007bff; 
+    color: #fff;
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.cart-button {
+    background-color: #ff6600; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.cart-button:hover {
+    background-color: #e65400; 
+}
+
+
+
+/*--Cuerpo--*/
+
+main {
+    background: linear-gradient(to bottom, #191D20, #A31621); 
+    max-width: 70%;
+    height: 700px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.faq-item h2 {
+    color: #fff;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.faq-item.active .answer {
+    display: block;
+}
+
+
+
+
+/*--Footer--*/
+
+footer {
+    background: linear-gradient(to bottom, #A31621, #191D20);
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales h3 {
+    font-size: 24px; 
+    margin-bottom: 5px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+.redes-sociales img {
+    width: 50px; 
+}
+
+.contacto h3 {
+    font-size: 24px; 
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 14px; 
+    margin: 5px 0;
+    text-align: center;
+}

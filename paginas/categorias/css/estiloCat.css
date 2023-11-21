@@ -1,0 +1,380 @@
+*{margin: 0; padding: 0;}
+
+html{background: #fff; font-size: 24px;}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #191D20; 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.logo {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 10px; 
+}
+
+.page-title {
+    font-size: 55px; 
+    font-family: 'Javanese Text';
+    font-weight: normal;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    margin-left: 50px;
+}
+
+.menu li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 10px 15px 10px 15px;
+    background-color: #323232;
+    font-family: 'Gadugi';
+    border-radius: 10px;
+}
+
+.menu a:hover{
+    color: #A91722;
+    background: #6e6e6e;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #007bff; 
+    color: #fff;
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.cart-button {
+    background-color: #ff6600; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.cart-button:hover {
+    background-color: #e65400; 
+}
+
+
+
+/*--Cuerpo--*/
+
+
+/*--Carrusel--*/
+.container-all {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    transform: translate(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagina {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagina-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagina-item:hover {
+    transform: scale(1.5);
+}
+
+.pagina-item img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagina-item:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagina .pagina-item[for="1"] {
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagina .pagina-item[for="2"] {
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagina .pagina-item[for="3"] {
+    background: #fff;
+}
+
+@keyframes autoplay {
+    33% {
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    66% {
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    100% {
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
+
+/*--Carrusel--*/
+
+.productos {
+    width: 80%; 
+    height: auto;
+    margin: 0 auto; 
+    background: linear-gradient(to bottom, #191D20, #A31621); 
+    padding: 20px;
+}
+
+
+/*Sidebar*/
+.sidebar {
+    width: 20%;
+    height: 600px;
+    margin-left: 20px;
+    float: right;
+    background-color: #191D20;
+    color: #fff;
+}
+
+.widget {
+    padding: 10px;
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+.widget h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget li {
+    margin-bottom: 5px;
+}
+
+.widget a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.widget a:hover {
+    color: #4caf50;
+}
+/*Fin de Sidebar*/
+
+/*--Display--*/
+
+.mostrador{
+    height: 100%;
+    width: 78.8%;
+    background-color: #191D20;
+    margin: 20px 0;
+}
+
+.articulo{
+    height: 100px;
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.articulo p{
+    display: inline;
+    color: #fff;
+}
+.articulo img{
+    height: 100px;
+    float: left;
+
+}
+
+.mostrador h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*# Paginas*/
+.pagnum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.page-number {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.prev,
+.next {
+    background-color: #323232;
+    color: white;
+    border: none;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #45a049;
+}
+/*Fin # Paginas*/
+
+/*--Footer--*/
+
+footer {
+    background: linear-gradient(to bottom, #A31621, #191D20);
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales h3 {
+    font-size: 24px; 
+    margin-bottom: 5px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+.redes-sociales img {
+    width: 50px; 
+}
+
+.contacto h3 {
+    font-size: 24px; 
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 14px; 
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+
+
+.articulo a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
+.nombre a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
